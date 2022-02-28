@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster Recommendations</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+          <p style="text-align:center;"><img src="title.png" alt="Title"></p>
+        </div>  
+    </header>
+		
+    <nav>
+        <ul>
+            <li><a class= "current-page" href = "index.html" title = "Overview">Overview</a></li>
+            <li><a href = "2022-02-02-implementation-details.html" title = "Implementation Details">Implementation Details</a></li>
+            <li><a href = "2022-02-02-weekly-logs.html" title = "Weekly Logs">Weekly Logs</a></li>
+            <li><a href = "2022-02-02-about-page.html" title = "About Myself">About Myself</a></li>
+        </ul>
+    </nav>
+	
+    <div id="container">
+
+    <section>
+        <p style="text-align:center;"><img src="blockbuster.png" alt="Blockbuster" width="250" ></p>
+    </section>
+
+    <section>
+        <h2>Jan. 31 - Feb. 4</h2>
+        <p style="border:#004D99; padding: 15px; border-width:3px; border-style:solid;"> This week I have completed the high-level project diagram, finalized all data set cleaning processes, finished the initial/basic algorithm design, and started this website. My next steps for the project are to complete all variable engineering processes for the data set, to implement the designed algorithm, to evaluate and tweak the algorithm as necessary, to buy/set up a domain for the webpage, and to continue to improve the content/design of the webpage. So far, the variable engineering steps have been tricky (because of the way the data is stored), so I am going through this processes carefully. The data set has a lot of variety in terms of available countries, languages, and genres, so I am excited/hopeful for a good recommendation engine. Overall, the Blockbuster Recommendation Project is on schedule.</p>
+    </section>
+
+    <section>
+      <h2>Feb. 7 - Feb. 11</h2>
+      <p style="border:#004D99; padding: 15px; border-width:3px; border-style:solid;">This week I completed the recommendation system algorithm design, added over 200 new categorical variable identifiers for the Euclidean distance calculation (part of algorithm), and found way for simplifying the variable engineering Python code. My next steps for the project are to complete the algorithm implementation, reassess the input variables and add more where necessary, buy the website domain name, and begin working with the program interface. I made a few tweaks when it comes to country availability and languages - I am only choosing movies/series that are available in the top-11 most popular languages (because of the number of observations associated with that language), and I am totally removing the country availability aspect. With these changes, I believe the recommendations for the selected languages will be stronger, and we are no longer restriction on country. Also, these changes (fewer observations) will better allow the algorithm to run on my local machine, as opposed to purchasing computing time through AWS. </p>
+    </section>
+
+    <section>
+      <h2>Feb. 14 - Feb. 18</h2>
+      <p style="border:#004D99; padding: 15px; border-width:3px; border-style:solid;"> This week I have completed some edits to the website formatting, finished all variables engineering processes, and finished the algorithm implementation. Since the algorithm depends on Euclidean distance for distinguishing movies and series from others, having as many observation features as possible is beneficial as long as they are all on the same scale. With the information available in the original data set, I have been able to engineer just less than 1,000 additional categorical variables (0 or 1) that can be used to better measure similarity between observations. These variables are all based on movie/series genre and movie/series genre tags (similar to genre, but more broad). Overall, this will help to really distinguish movies and series that are the most similar. Even with this many variables, the Euclidean distances can still be computed on my local machine in a short period of time. I also completed the algorithm implementation (high-level design posted in "Details" tab), but this will be slightly adjusted based on what information I want to be extracted from each recommendation. Next up, I need to begin designing the program interface and determine what information I need extracted from each recommended movie/series. I also need to purchase the domain name for this site and configure it to GitHub Pages.</p>
+    </section>
+
+    <section>
+      <h2>Feb. 21 - Feb. 25</h2>
+      <p>Coming soon... </p>
+    </section>
+
+    <section>
+      <h2>Feb. 28 - Mar. 4</h2>
+      <p>Coming soon... </p>
+    </section>
+
+    <section>
+      <h2>Mar. 7 - Mar. 11</h2>
+      <p>Coming soon... </p>
+    </section>
+
+    <section>
+      <h2>Mar. 14 - Mar. 18</h2>
+      <p>Coming soon... </p>
+    </section>
+
+    <section>
+      <h2>Mar. 21 - Mar. 25</h2>
+      <p>Coming soon... </p>
+    </section>
+
+    <section>
+      <h2>Mar. 28 - Apr. 1</h2>
+      <p>Coming soon... </p>
+    </section>
+         
+    </div>
+    <footer>
+        <h2>Copyright &copy; 2021. All Rights Reserved</h2>
+    </footer>
+  </body>
+</html>
